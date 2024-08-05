@@ -8,6 +8,8 @@ def run():
     print(f"echo name={name}")
     print(f"echo time={time}")
     
-    with open(os.environ['GITHUB_ENV'], 'a') as env_file:
-        env_file.write(f"NAME={name}\n")
-        env_file.write(f"TIME={time}\n")
+    # with open(os.environ['GITHUB_ENV'], 'a') as env_file:
+    #     env_file.write(f"NAME={name}\n")
+    #     env_file.write(f"TIME={time}\n")
+
+run()
