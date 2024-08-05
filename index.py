@@ -8,8 +8,10 @@ def run():
     print(f"echo name={name}")
     print(f"echo time={time}")
     
-    print(f"::set-output name=name::{name}")
-    print(f"::set-output name=time::{time}")
+    # print(f"::set-output name=name::{name}")
+    # print(f"::set-output name=time::{time}")
+    print(f"echo {name}={name} >> $GITHUB_OUTPUT")
+    print(f"echo {time}={time} >> $GITHUB_OUTPUT")
 
     # Set the output variable
     # with open(os.environ['GITHUB_ENV'], 'a') as env_file:
